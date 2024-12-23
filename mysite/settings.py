@@ -53,9 +53,11 @@ INSTALLED_APPS = [
 
     # third apps
     'debug_toolbar',
+    'django_bootstrap5',
 
     # local apps
     'accounts',
+    'mall_test',
 ]
 
 MIDDLEWARE = [
@@ -74,7 +76,9 @@ ROOT_URLCONF = 'mysite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            BASE_DIR / 'templates'    
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
