@@ -53,10 +53,11 @@ INSTALLED_APPS = [
 
     # third apps
     'debug_toolbar',
-    "django_bootstrap5",
+    'django_bootstrap5',
 
     # local apps
     'accounts',
+    'mall_test',
 ]
 
 MIDDLEWARE = [
@@ -76,7 +77,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            BASE_DIR / "templates"
+            BASE_DIR / 'templates'    
         ],
         'APP_DIRS': True,
         'OPTIONS': {
